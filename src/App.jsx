@@ -1,15 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import MainNav from "./components/MainNav";
-// import Gallery from "./components/Gallery";
-// import Contact from "./components/Contact";
-// import FAQ from "./components/FAQ";
-// import About from "./components/About";
-// import Footer from "./components/Footer";
-// import Services from "./components/Services";
 import ErrorPage from "./components/ErrorPage";
 import ScrollToTop from "./components/ScrollToTop";
-// import PrivacyPolicy from "./components/PrivacyPolicy";
 
 import "./App.css";
 import { Suspense, lazy } from "react";

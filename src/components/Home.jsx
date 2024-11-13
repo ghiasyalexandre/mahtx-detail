@@ -191,7 +191,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-y-12 mt-10 lg:grid-cols-3">
             <div className="grid gap-6 grid-cols-1 xs:grid-cols-3 lg:grid-cols-1 xs:justify-items-center lg:justify-items-start">
-              <div>
+              <div className=" min-w-36">
                 <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -213,14 +213,14 @@ export default function Home() {
                   Email
                 </h2>
                 <p className="mt-2 text-sm lg:text-base text-gray-500 dark:text-gray-400">
-                  Our friendly team is here to help.
+                  Reach us here.
                 </p>
                 <p className="mt-2 text-sm lg:text-base text-black dark:text-white">
-                  mathpatino@gmail.com
+                  Mathpatino@gmail.com
                 </p>
               </div>
 
-              <div>
+              <div className=" min-w-36">
                 <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +254,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
+              <div className=" min-w-36">
                 <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
