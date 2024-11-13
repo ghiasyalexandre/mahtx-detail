@@ -1,17 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import MainNav from "./components/MainNav";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import FAQ from "./components/FAQ";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
+// import Gallery from "./components/Gallery";
+// import Contact from "./components/Contact";
+// import FAQ from "./components/FAQ";
+// import About from "./components/About";
+// import Footer from "./components/Footer";
+// import Services from "./components/Services";
 import ErrorPage from "./components/ErrorPage";
 import ScrollToTop from "./components/ScrollToTop";
-import PrivacyPolicy from "./components/PrivacyPolicy";
+// import PrivacyPolicy from "./components/PrivacyPolicy";
 
 import "./App.css";
+import { Suspense, lazy } from "react";
+
+const Gallery = lazy(() => import("./components/Gallery"));
+const Footer = lazy(() => import("./components/Footer"));
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
+const Services = lazy(() => import("./components/Services"));
+const Contact = lazy(() => import("./components/Contact"));
+const About = lazy(() => import("./components/About"));
+const FAQ = lazy(() => import("./components/FAQ"));
 
 function App() {
   return (
@@ -27,19 +36,21 @@ function App() {
         rel="stylesheet"
       ></link>
       <Router>
-        <MainNav />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/booking" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
+        <Suspense>
+          <MainNav />
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/booking" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+          <Footer />
+        </Suspense>
       </Router>
     </div>
   );

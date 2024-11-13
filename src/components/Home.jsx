@@ -83,9 +83,9 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="mt-auto">
-                    <Link to="/services">
+                    <Link to="/booking">
                       <button
-                        aria-label="Learn more about our Services"
+                        aria-label={`Learn more about our ${service.title}`}
                         className="text-black hover:text-white hover:shadow-md hover:shadow-white/50 dark:hover:shadow-black/50 hover:scale-105 bg-white dark:bg-black hover:bg-black dark:text-white border border-white px-4 py-2 rounded dark:hover:bg-white dark:hover:text-black dark:hover:border-black transition-all duration-300 ease-in-out"
                       >
                         Learn More
