@@ -28,7 +28,7 @@ const Gallery = () => {
       <div className="container px-4 pb-8 lg:pb-16 mx-auto">
         <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
-            className={`text-black dark:text-white font-semibold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
+            className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
           >

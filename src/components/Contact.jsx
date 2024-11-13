@@ -59,14 +59,14 @@ export default function Contact() {
   return (
     <div>
       <div className=" bg-white  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent pt-16 pb-8 lg:pb-32 transition-all duration-500 ease-in-out">
-        <div className="container px-6 mx-auto">
+        <div className="container px-6 sm:px-12 lg:px-20 mx-auto">
           <div
             className={`lg:flex lg:items-center lg:-mx-6 transition-all duration-700 ease-in-out ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
           >
             <div className="lg:w-1/2 lg:mx-6">
-              <h1 className=" text-center  lg:text-left text-3xl font-semibold text-gray-800  dark:text-white md:text-5xl xl:text-6xl">
+              <h1 className=" text-center  lg:text-left text-3xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl">
                 Contact Us for <br className="block sm:hidden lg:block" /> More
                 Info
               </h1>
@@ -147,8 +147,10 @@ export default function Contact() {
 
                 <div className="flex mt-4 -mx-1.5 ">
                   <a
+                    draggable={false}
+                    target="blank"
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
-                    href="https://www.instagram.com/mahtx.detailco/"
+                    href="https://www.linkedin.com/in/matthew-patino-1a12a8313/"
                   >
                     <svg
                       className="w-8 h-8"
@@ -173,8 +175,9 @@ export default function Contact() {
                   </a>
 
                   <a
+                    draggable={false}
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
-                    href="https://www.instagram.com/mahtx.detailco/"
+                    href="https://www.facebook.com/Mahtu0607"
                     target="blank"
                   >
                     <svg
@@ -191,6 +194,7 @@ export default function Contact() {
                   </a>
 
                   <a
+                    draggable={false}
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.instagram.com/mahtx.detailco/"
                     target="blank"

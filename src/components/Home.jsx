@@ -118,7 +118,7 @@ export default function Home() {
                 <div className="flex justify-center gap-4 mt-2 -mx-1.5 ">
                   <a
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
-                    href="https://www.instagram.com/mahtx.detailco/"
+                    href="https://www.linkedin.com/in/matthew-patino-1a12a8313/"
                   >
                     <svg
                       className="w-8 h-8"
@@ -144,7 +144,7 @@ export default function Home() {
 
                   <a
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
-                    href="https://www.instagram.com/mahtx.detailco/"
+                    href="https://www.facebook.com/Mahtu0607"
                     target="blank"
                   >
                     <svg
@@ -284,7 +284,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-lg border-black dark:border-white dark:shadow-white/40 shadow-lg shadow-black/50 border-2 col-span-4 lg:col-span-2 h-96 lg:h-auto">
+            <div className="overflow-hidden rounded-lg border-black dark:border-white shadow-neonDarkSlim dark:shadow-neonLightSlim border-2 col-span-4 lg:col-span-2 h-96 lg:h-auto">
               <iframe
                 width="100%"
                 height="100%"

@@ -22,13 +22,14 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="shadow-neonDark dark:shadow-neonLight z-50">
+    <nav className="shadow-neonDark dark:shadow-neonLight z-50 sticky top-0 w-full bg-black">
       <div className="px-4 py-4">
         <div className="md:flex md:items-center">
           <div className="flex items-center justify-between ">
-            <Link to="/">
+            <Link to="/" draggable={false}>
               <img
-                className="w-auto h-16 scale-110 hover:scale-125 transition-transform ease-in-out duration-300"
+                draggable={false}
+                className="w-auto ml-2 mr-4 h-16 scale-125 hover:scale-140  sm:hover:scale-140 transition-transform ease-in-out duration-300"
                 src="./logoTrimCropped.webp"
                 alt="logo"
               />
@@ -115,7 +116,7 @@ export default function MainNav() {
               <Link
                 to="/about"
                 draggable={false}
-                className="mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
+                className="md:text-center mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
                 About Us
               </Link>
@@ -132,6 +133,7 @@ export default function MainNav() {
           <div className="absolute flex right-2 bottom-2 z-50 md:static md:mr-0">
             <div className="flex justify-end transition-all ease-in-out duration-300">
               <a
+                draggable={false}
                 href="https://www.instagram.com/mahtx.detailco/"
                 target="blank"
                 className="hidden md:block mx-1 lg:mx-2 p-2 font-semibold text-white border-black  bg-black hover:border-white hover:bg-neutral-200 focus:ring-2 ring-white hover:text-black rounded-full transition-colors ease-in-out duration-300"

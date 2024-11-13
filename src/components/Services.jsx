@@ -357,7 +357,7 @@ export default function ServiceSelection() {
     <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-colors duration-500 ease-in-out">
       <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
         <h1
-          className={`text-black dark:text-white font-semibold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
+          className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
             fadeInTitle ? "opacity-100" : "opacity-0"
           }`}
         >

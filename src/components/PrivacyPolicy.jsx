@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         }`}
       >
         <div className="flex justify-center ">
-          <h1 className=" text-black dark:text-white font-medium text-center">
+          <h1 className=" text-black dark:text-white font-semibold text-center">
             Privacy Policy
           </h1>
         </div>

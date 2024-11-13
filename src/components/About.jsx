@@ -19,7 +19,7 @@ export default function About() {
               style={{ transitionDelay: "200ms" }}
             >
               <div>
-                <h1 className="font-semibold text-black capitalize dark:text-white text-center lg:text-left text-4xl sm:text-6xl">
+                <h1 className="font-bold text-black capitalize dark:text-white text-center lg:text-left text-4xl sm:text-6xl">
                   About Us
                 </h1>
                 <div className="mt-4 flex justify-center lg:justify-start">
@@ -125,7 +125,7 @@ export default function About() {
             >
               <img
                 draggable={false}
-                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg shadow-xl shadow-black/40 dark:shadow-white/30 "
+                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-sm shadow-neonDarkSlim dark:shadow-neonLightSlim "
                 src="./MattSpray.PNG"
                 alt=""
               />

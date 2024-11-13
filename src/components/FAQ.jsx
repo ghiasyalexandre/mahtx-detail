@@ -21,7 +21,7 @@ export default function FAQ() {
       <div className="container px-6 pb-16 sm:pb-44 mx-auto md:px-24">
         <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
-            className={`text-black dark:text-white font-semibold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
+            className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
           >
