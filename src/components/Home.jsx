@@ -189,8 +189,8 @@ export default function Home() {
 
           <hr className="mt-2 mb-4 border-transparent dark:border-neutral-700" />
 
-          <div className="grid grid-cols-1 gap-4 gap-y-10 mt-10 lg:grid-cols-3">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div className="grid grid-cols-1 gap-y-12 mt-10 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 xs:grid-cols-3 lg:grid-cols-1 xs:justify-items-center lg:justify-items-start">
               <div>
                 <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
                   <svg

@@ -50,6 +50,7 @@ export default function Footer() {
                   <img
                     className="w-6 h-6"
                     src="./paypal-icon.svg"
+                    aria-label="Paypal"
                     draggable={false}
                   />
                 </div>
@@ -57,6 +58,7 @@ export default function Footer() {
                   <img
                     className="w-7 h-8"
                     src="./venmo-icon.svg"
+                    aria-label="Venmo"
                     draggable={false}
                   />
                 </div>
@@ -64,6 +66,7 @@ export default function Footer() {
                   <img
                     className="w-7 h-8"
                     src="./zelle.svg"
+                    aria-label="Zelle"
                     draggable={false}
                   />
                 </div>
