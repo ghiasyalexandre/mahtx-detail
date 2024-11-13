@@ -63,7 +63,7 @@ export default function Footer() {
                 <div className="bg-white pl-0.5 pt-0 h-8 w-10 rounded-md flex align-middle justify-center">
                   <img
                     className="w-7 h-8"
-                    src="./zelle-1.svg"
+                    src="./zelle.svg"
                     draggable={false}
                   />
                 </div>

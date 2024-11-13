@@ -137,7 +137,7 @@ export default function MainNav() {
             </div>
           </div>
 
-          <div className="absolute flex right-2 bottom-2 z-50 md:static md:mr-0">
+          <div className=" fixed flex right-2 bottom-2 z-50 md:static md:mr-0">
             <div className="flex justify-end transition-all ease-in-out duration-300">
               <a
                 draggable={false}
