@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainNav from "./components/MainNav";
 import Home from "./components/Home";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import MainNav from "./components/MainNav";
 import Gallery from "./components/Gallery";
-import About from "./components/About";
-import ErrorPage from "./components/ErrorPage";
+import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
+import About from "./components/About";
+import Footer from "./components/Footer";
 import Services from "./components/Services";
+import ErrorPage from "./components/ErrorPage";
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 

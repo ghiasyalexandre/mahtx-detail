@@ -6,12 +6,6 @@ import Carousel from "./Carousel";
 export default function Home() {
   const [fadeIn, setFadeIn] = useState(false);
 
-  const images = [
-    "https://via.placeholder.com/800x400/FF0000/FFFFFF?text=Slide+1",
-    "https://via.placeholder.com/800x400/00FF00/FFFFFF?text=Slide+2",
-    "https://via.placeholder.com/800x400/0000FF/FFFFFF?text=Slide+3",
-  ];
-
   useEffect(() => {
     setFadeIn(true); // Trigger the fade-in effect after component mounts
   }, []);
@@ -101,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Carousel items={images} />
+      <Carousel />
 
       <div className="bg-white dark:bg-transparent pt-16  lg:pt-24 dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-all duration-500 ease-in-out">
         <div className="container max-w-7xl px-8 py-8  mx-auto xl:shadow-neonDark xl:dark:shadow-neonLight rounded-xl">

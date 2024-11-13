@@ -2,8 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import "./GalleryImages.css";
 
 export default function GalleryImages({ loadImages }) {
-  const [modalImage, setModalImage] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(
     Array(loadImages.length).fill(false)
   );
@@ -38,15 +36,6 @@ export default function GalleryImages({ loadImages }) {
     };
   }, [loadImages]);
 
-  const openModal = (modalImage) => {
-    setIsModalOpen(true);
-    setModalImage(modalImage);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="py-2 ">
       <div className="mx-auto px-0 sm:px-6 lg:px-8 ">
@@ -71,36 +60,10 @@ export default function GalleryImages({ loadImages }) {
                     alt="Gallery"
                     draggable={false}
                     className="gallery-image object-cover mx-auto w-auto h-full cursor-pointer rounded-lg shadow-lg shadow-black/30 dark:shadow-white/20"
-                    onClick={() => openModal(placedImage)}
                   />
                 </div>
               </div>
             ))}
-            {/* Modal */}
-            {/* {isModalOpen && (
-              <div
-                className="container fixed z-50 flex items-center justify-center bg-black bg-opacity-40"
-                onClick={() => closeModal()} // Close modal when clicking on background
-              >
-                <div
-                  className="relative p-4 rounded-lg"
-                  onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the image container
-                >
-                  <button
-                    className="text-3xl scale-50 sm:scale-75 lg:scale-100 absolute top-2 right-2 text-gray-700 hover:text-red-600 transition ease-in-out"
-                    onClick={() => closeModal()}
-                  >
-                    &times;
-                  </button>
-                  <img
-                    src={modalImage}
-                    alt="Gallery"
-                    className="w-full h-auto max-w-[80vw] max-h-[80vh] "
-                    draggable={false}
-                  />
-                </div>
-              </div>
-            )} */}
           </div>
         </div>
       </div>

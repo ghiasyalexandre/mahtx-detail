@@ -126,7 +126,7 @@ export default function About() {
               <img
                 draggable={false}
                 className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg border border-white dark:border-black shadow-neonDark dark:shadow-neonLight "
-                src="./MattSpray.PNG"
+                src="./MattSpray.webp"
                 alt=""
               />
             </div>
