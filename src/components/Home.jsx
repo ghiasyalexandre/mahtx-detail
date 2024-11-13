@@ -284,7 +284,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-lg border-black dark:border-white shadow-neonDarkSlim dark:shadow-neonLightSlim border-2 col-span-4 lg:col-span-2 h-96 lg:h-auto">
+            <div className="overflow-hidden rounded-lg border-white dark:border-black shadow-neonDark dark:shadow-neonLight border-2 col-span-4 lg:col-span-2 h-96 lg:h-auto">
               <iframe
                 width="100%"
                 height="100%"

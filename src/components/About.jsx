@@ -33,7 +33,7 @@ export default function About() {
 
               {/* Our History */}
               <div className="md:flex md:items-start md:-mx-4 md:pl-4">
-                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4">
+                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -58,7 +58,7 @@ export default function About() {
 
               {/* Our Staff */}
               <div className="md:flex md:items-start md:-mx-4 md:pl-4">
-                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4">
+                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -88,7 +88,7 @@ export default function About() {
 
               {/* Contact Us */}
               <div className="md:flex md:items-start md:-mx-4 md:pl-4">
-                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4">
+                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -125,7 +125,7 @@ export default function About() {
             >
               <img
                 draggable={false}
-                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-sm shadow-neonDarkSlim dark:shadow-neonLightSlim "
+                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg border border-white dark:border-black shadow-neonDark dark:shadow-neonLight "
                 src="./MattSpray.PNG"
                 alt=""
               />
