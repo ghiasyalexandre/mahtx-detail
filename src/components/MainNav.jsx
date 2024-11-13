@@ -26,9 +26,10 @@ export default function MainNav() {
       <div className="px-4 py-4">
         <div className="md:flex md:items-center">
           <div className="flex items-center justify-between ">
-            <Link to="/" draggable={false}>
+            <Link to="/" draggable={false} aria-label="Go Home">
               <img
                 draggable={false}
+                aria-label="Logo"
                 className="w-auto ml-2 mr-4 h-16 scale-125 hover:scale-140  sm:hover:scale-140 transition-transform ease-in-out duration-300"
                 src="./logoTrimCropped.webp"
                 alt="logo"
@@ -88,12 +89,14 @@ export default function MainNav() {
               <Link
                 to="/"
                 draggable={false}
+                aria-label="Home"
                 className="mt-2 hover:underline-offset-8 hover:underline transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
                 Home
               </Link>
               <Link
                 to="/gallery"
+                aria-label="Gallery"
                 draggable={false}
                 className="mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4  hover:text-gray-200"
               >
@@ -101,6 +104,7 @@ export default function MainNav() {
               </Link>
               <Link
                 to="/booking"
+                aria-label="Booking"
                 draggable={false}
                 className="mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
@@ -108,6 +112,7 @@ export default function MainNav() {
               </Link>
               <Link
                 to="/contact"
+                aria-label="Contact Us"
                 draggable={false}
                 className="mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
@@ -116,12 +121,14 @@ export default function MainNav() {
               <Link
                 to="/about"
                 draggable={false}
+                aria-label="About Us"
                 className="md:text-center mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
                 About Us
               </Link>
               <Link
                 to="/faq"
+                aria-label="Frequently Asked Questions"
                 draggable={false}
                 className="mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
@@ -134,6 +141,7 @@ export default function MainNav() {
             <div className="flex justify-end transition-all ease-in-out duration-300">
               <a
                 draggable={false}
+                aria-label="Instagram"
                 href="https://www.instagram.com/mahtx.detailco/"
                 target="blank"
                 className="hidden md:block mx-1 lg:mx-2 p-2 font-semibold text-white border-black  bg-black hover:border-white hover:bg-neutral-200 focus:ring-2 ring-white hover:text-black rounded-full transition-colors ease-in-out duration-300"
@@ -149,6 +157,7 @@ export default function MainNav() {
               </a>
               <button
                 onClick={toggleTheme}
+                aria-label="Light or Dark Mode"
                 className="mx-1 lg:mx-2 p-2 font-semibold text-black bg-white/30 md:bg-white/80 border-black dark:text-white dark:bg-black/30 dark:hover:bg-neutral-200 dark:hover:text-black hover:border-white hover:bg-neutral-800 hover:text-neutral-300 rounded-full"
               >
                 {theme === "light" ? (

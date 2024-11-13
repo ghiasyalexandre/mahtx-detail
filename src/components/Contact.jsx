@@ -227,6 +227,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
+                      aria-label="Name"
                       required
                       placeholder="John Doe"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-neutral-600 dark:bg-neutral-900 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 focus:ring-blue-400 dark:focus:ring-neutral-400 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -240,6 +241,7 @@ export default function Contact() {
                     <input
                       type="text"
                       name="phone"
+                      aria-label="Phone Number"
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="954-555-1234"
@@ -254,6 +256,7 @@ export default function Contact() {
                     <input
                       type="email"
                       name="email"
+                      aria-label="Email Address"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -268,6 +271,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       name="message"
+                      aria-label="Message"
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -278,6 +282,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
+                    aria-label="Submit Message"
                     className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-black hover:bg-white hover:text-black hover:border-black dark:bg-white rounded-md dark:hover:bg-black dark:hover:text-white dark:text-black"
                   >
                     Get in touch

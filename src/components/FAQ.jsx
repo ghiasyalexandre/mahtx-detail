@@ -40,6 +40,7 @@ export default function FAQ() {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <button
+                aria-label="Frequently Asked Questions"
                 onClick={() => toggleOpen(index)}
                 className="flex items-center focus:outline-none shadow-lg shadow-black/30 dark:shadow-white/20"
               >

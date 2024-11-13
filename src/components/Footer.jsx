@@ -10,11 +10,17 @@ export default function Footer() {
         <footer className={``}>
           <div className="px-4 py-4 mx-auto">
             <div className="flex flex-col items-center text-center">
-              <Link to="/" draggable={false} className="relative inline-block">
+              <Link
+                to="/"
+                draggable={false}
+                aria-label="Go Home"
+                className="relative inline-block"
+              >
                 <img
                   className="w-auto h-32 hover:scale-110 transition-transform duration-500 ease-in-out"
                   src="./logoCropped.webp"
                   alt=""
+                  aria-label="Logo"
                   draggable={false}
                 />
               </Link>
@@ -23,6 +29,7 @@ export default function Footer() {
                 <Link
                   to="/services"
                   draggable={false}
+                  aria-label="View Services"
                   className="px-5 py-2 text-sm font-semibold tracking-wide shadow-lg scale-105 text-black hover:shadow-white/30 hover:scale-110 transition-all capitalize  duration-300 transform bg-white rounded-md sm:mx-2 sm:order-2 w-64  focus:outline-none focus:ring focus:ring-neutral-300 dark:focus:ring-white focus:ring-opacity-80"
                 >
                   Book Now
@@ -63,20 +70,10 @@ export default function Footer() {
               </div>
 
               <div className="flex mt-1 pt-1 sm:mt-0">
-                {/* <Link
-                  to="/about"
-                  className="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-gray-500 dark:hover:text-gray-300"
-                  aria-label="About Us"
-                  draggable={false}
-                >
-                  {" "}
-                  About Us{" "}
-                </Link> */}
-
                 <Link
                   to="/contact"
                   className="mx-2 text-sm text-neutral-500 transition-colors duration-300 hover:text-neutral-500 dark:hover:text-neutral-300"
-                  aria-label="Contact"
+                  aria-label="Contact Us"
                   draggable={false}
                 >
                   {" "}

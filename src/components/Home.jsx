@@ -84,7 +84,10 @@ export default function Home() {
                   </div>
                   <div className="mt-auto">
                     <Link to="/services">
-                      <button className="text-black hover:text-white hover:shadow-md hover:shadow-white/50 dark:hover:shadow-black/50 hover:scale-105 bg-white dark:bg-black hover:bg-black dark:text-white border border-white px-4 py-2 rounded dark:hover:bg-white dark:hover:text-black dark:hover:border-black transition-all duration-300 ease-in-out">
+                      <button
+                        aria-label="Learn more about our Services"
+                        className="text-black hover:text-white hover:shadow-md hover:shadow-white/50 dark:hover:shadow-black/50 hover:scale-105 bg-white dark:bg-black hover:bg-black dark:text-white border border-white px-4 py-2 rounded dark:hover:bg-white dark:hover:text-black dark:hover:border-black transition-all duration-300 ease-in-out"
+                      >
                         Learn More
                       </button>
                     </Link>
@@ -111,6 +114,7 @@ export default function Home() {
               <div className=" w-full">
                 <div className="flex justify-center gap-4 mt-2 -mx-1.5 ">
                   <a
+                    aria-label="Linkedin"
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.linkedin.com/in/matthew-patino-1a12a8313/"
                   >
@@ -137,6 +141,7 @@ export default function Home() {
                   </a>
 
                   <a
+                    aria-label="Facebook"
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.facebook.com/Mahtu0607"
                     target="blank"
@@ -155,6 +160,7 @@ export default function Home() {
                   </a>
 
                   <a
+                    aria-label="Instagram"
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.instagram.com/mahtx.detailco/"
                     target="blank"
@@ -284,6 +290,7 @@ export default function Home() {
                 height="100%"
                 frameBorder="0"
                 title="map"
+                aria-label="Google Maps Location"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57022.95976337856!2d-80.09614518923404!3d26.714523922338916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1730263990654!5m2!1sen!2sus"
               ></iframe>
             </div>

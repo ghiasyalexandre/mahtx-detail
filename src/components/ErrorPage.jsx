@@ -30,8 +30,11 @@ export default function ErrorPage() {
           </p>
 
           <div className="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
-            <Link to="..">
-              <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-all duration-300 bg-black border rounded-lg gap-x-2 sm:w-auto dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white dark:text-black">
+            <Link to=".." aria-label="Previous Page">
+              <button
+                aria-label="Go Back"
+                className="flex items-center justify-center w-1/2 px-5 py-2 text-sm text-white transition-all duration-300 bg-black border rounded-lg gap-x-2 sm:w-auto dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white dark:text-black"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -50,8 +53,11 @@ export default function ErrorPage() {
                 <span>Go back</span>
               </button>
             </Link>
-            <Link to="/">
-              <button className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-all duration-300 bg-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white dark:text-black  rounded-lg shrink-0 sm:w-auto ">
+            <Link to="/" aria-label="Homepage">
+              <button
+                aria-label="Go Home"
+                className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-all duration-300 bg-black dark:bg-white dark:hover:bg-black dark:hover:border-white dark:hover:text-white dark:text-black  rounded-lg shrink-0 sm:w-auto "
+              >
                 Take me home
               </button>
             </Link>

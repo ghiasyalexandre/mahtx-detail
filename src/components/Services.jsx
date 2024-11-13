@@ -391,6 +391,7 @@ export default function ServiceSelection() {
                       {category.description}
                     </p>
                     <button
+                      aria-label="Select Service Category"
                       onClick={() => handleCategoryView(category.key)}
                       className="mt-4 flex items-center text-sm text-white border border-white hover:text-black hover:bg-white hover:border-black transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
                     >
@@ -470,6 +471,7 @@ export default function ServiceSelection() {
                         ) ? (
                           <div className="flex space-x-4 transition-all ease-in-out duration-300">
                             <button
+                              aria-label="Service Selected"
                               onClick={() =>
                                 toggleServiceSelection(
                                   selectedCategory,
@@ -484,6 +486,7 @@ export default function ServiceSelection() {
                           </div>
                         ) : (
                           <button
+                            aria-label="Select Service"
                             onClick={() =>
                               toggleServiceSelection(
                                 selectedCategory,
@@ -530,6 +533,7 @@ export default function ServiceSelection() {
                       value={formData.first_name}
                       onChange={handleInputChange}
                       placeholder="Maht"
+                      aria-label="First Name"
                       className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -541,6 +545,7 @@ export default function ServiceSelection() {
                     <input
                       type="text"
                       name="last_name"
+                      aria-label="Last Name"
                       value={formData.last_name}
                       onChange={handleInputChange}
                       placeholder="X"
@@ -557,6 +562,7 @@ export default function ServiceSelection() {
                     required
                     type="email"
                     name="user_email"
+                    aria-label="User Email"
                     value={formData.user_email}
                     onChange={handleInputChange}
                     placeholder="mahtx@example.com"
@@ -572,6 +578,7 @@ export default function ServiceSelection() {
                     required
                     type="text"
                     name="phone"
+                    aria-label="Phone Number"
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="123-456-7890"
@@ -586,6 +593,7 @@ export default function ServiceSelection() {
                   <textarea
                     name="message"
                     value={formData.message}
+                    aria-label="Message"
                     onChange={handleInputChange}
                     className="block w-full h-16 lg:h-32 px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Optional notes or requests"
@@ -597,8 +605,18 @@ export default function ServiceSelection() {
                   name="services"
                   value={formData.services}
                 />
-                <input type="hidden" name="total" value={formData.total} />
-                <input type="hidden" name="date" value={formData.date} />
+                <input
+                  type="hidden"
+                  name="total"
+                  value={formData.total}
+                  aria-label="Order Total"
+                />
+                <input
+                  type="hidden"
+                  name="date"
+                  value={formData.date}
+                  aria-label="Scheduled Date"
+                />
               </form>
             </div>
           )}
@@ -673,12 +691,14 @@ export default function ServiceSelection() {
                   {!showCategories && !showContactInfo && (
                     <div className="flex gap-2">
                       <button
+                        aria-label="Go Back"
                         onClick={handleOptionView}
                         className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30 transition-all capitalize ease-in-out  duration-300 transform"
                       >
                         Back
                       </button>
                       <button
+                        aria-label="Next"
                         onClick={handleContactView}
                         className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30  transition-all capitalize ease-in-out  duration-300 transform"
                       >
@@ -698,6 +718,7 @@ export default function ServiceSelection() {
                 </p>
                 <div className="flex flex-row gap-2">
                   <button
+                    aria-label="Go Back"
                     onClick={handleBackContactView}
                     className="dark:bg-white bg-black text-white dark:text-black font-semibold w-1/2 py-2 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30 transition-all capitalize ease-in-out  duration-300 transform"
                   >
@@ -706,6 +727,7 @@ export default function ServiceSelection() {
                   <button
                     form="myForm"
                     type="submit"
+                    aria-label="Submit Booking"
                     className="dark:bg-white bg-black text-white dark:text-black font-semibold w-1/2 py-2 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30  transition-all capitalize ease-in-out  duration-300 transform"
                   >
                     Submit
