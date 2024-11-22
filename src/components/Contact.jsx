@@ -66,7 +66,10 @@ export default function Contact() {
             }`}
           >
             <div className="lg:w-1/2 lg:mx-6">
-              <h1 className=" text-center  lg:text-left text-3xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl">
+              <h1
+                aria-label="Contact Us for More Info"
+                className=" text-center  lg:text-left text-3xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl"
+              >
                 Contact Us for <br className="block sm:hidden lg:block" /> More
                 Info
               </h1>
@@ -78,10 +81,14 @@ export default function Contact() {
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 lg:w-8 lg:h-8 mx-1 sm:mr-1 lg:mr-2 text-black dark:text-white"
                     fill="none"
+                    role="img"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="2"
+                    aria-labelledby="locationIcon"
                   >
+                    {" "}
+                    <title id="locationIcon">Location</title>
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -107,7 +114,11 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="2"
+                    role="img"
+                    aria-labelledby="phoneIcon"
                   >
+                    {" "}
+                    <title id="phoneIcon">Phone</title>
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -128,7 +139,11 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="2"
+                    role="img"
+                    aria-labelledby="emailIcon"
                   >
+                    {" "}
+                    <title id="emailIcon">Email</title>
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -148,7 +163,9 @@ export default function Contact() {
                 <div className="flex mt-4 -mx-1.5 ">
                   <a
                     draggable={false}
-                    target="blank"
+                    aria-label="Visit our LinkedIn page"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.linkedin.com/in/matthew-patino-1a12a8313/"
                   >
@@ -178,7 +195,9 @@ export default function Contact() {
                     draggable={false}
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.facebook.com/Mahtu0607"
-                    target="blank"
+                    aria-label="Visit our Facebook page"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <svg
                       className="w-8 h-8"
@@ -197,7 +216,9 @@ export default function Contact() {
                     draggable={false}
                     className="mx-1.5 dark:hover:text-neutral-100 text-gray-400 transition-colors duration-300 transform hover:text-black"
                     href="https://www.instagram.com/mahtx.detailco/"
-                    target="blank"
+                    aria-label="Visit our Instagram page"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <svg
                       className="w-8 h-8"
@@ -217,7 +238,11 @@ export default function Contact() {
 
             <div className="mt-8 lg:w-1/2 lg:mx-6">
               <div className="w-full px-8 py-6 mx-auto overflow-hidden bg-neutral-50 rounded-lg shadow-lg dark:shadow-md dark:bg-neutral-800 lg:max-w-xl shadow-black/50 dark:shadow-white/20">
-                <form className="mt-6 " onSubmit={handleSubmit}>
+                <form
+                  className="mt-6 "
+                  onSubmit={handleSubmit}
+                  aria-label="Contact Form"
+                >
                   <div className="flex-1">
                     <label className="block mb-2 text-gray-600 dark:text-neutral-200">
                       Name *

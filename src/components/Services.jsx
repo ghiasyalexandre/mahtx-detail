@@ -360,6 +360,7 @@ export default function ServiceSelection() {
           className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
             fadeInTitle ? "opacity-100" : "opacity-0"
           }`}
+          aria-labelledby="booking-heading"
         >
           Booking
         </h1>
@@ -624,7 +625,7 @@ export default function ServiceSelection() {
 
         {/* Summary Section */}
         <div className="lg:w-1/3 ml-2 m-4 p-4 border rounded-lg shadow-lg shadow-black/20 dark:shadow-white/20 transition-all transform-gpu duration-500 ease-in-out">
-          <h3 className="text-2xl font-semibold lg:mb-3 text-black dark:text-white">
+          <h3 className="text-2xl text-center font-semibold lg:mb-3 text-black dark:text-white">
             Summary
           </h3>
           <hr className="mt-0 mb-4 border-neutral-700" />

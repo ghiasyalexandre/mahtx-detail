@@ -19,10 +19,17 @@ export default function About() {
               style={{ transitionDelay: "200ms" }}
             >
               <div>
-                <h1 className="font-bold text-black capitalize dark:text-white text-center lg:text-left text-4xl sm:text-6xl">
+                <h1
+                  className="font-bold text-black capitalize dark:text-white text-center lg:text-left text-4xl sm:text-6xl"
+                  aria-label="About Us"
+                >
                   About Us
                 </h1>
-                <div className="mt-4 flex justify-center lg:justify-start">
+                <div
+                  role="separator"
+                  aria-hidden="true"
+                  className="mt-4 flex justify-center lg:justify-start"
+                >
                   <span className="inline-block w-40 h-1 bg-black dark:bg-white rounded-full"></span>
                   <span className="inline-block w-14 h-1 ml-1 bg-black dark:bg-white rounded-full"></span>
                   <span className="inline-block w-6 h-1 ml-1 bg-black dark:bg-white rounded-full"></span>
@@ -33,7 +40,11 @@ export default function About() {
 
               {/* Our History */}
               <div className="md:flex md:items-start md:-mx-4 md:pl-4">
-                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim">
+                <span
+                  role="img"
+                  aria-label="History Icon"
+                  className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -47,7 +58,7 @@ export default function About() {
                   <h1 className="text-xl font-semibold text-neutral-800 capitalize dark:text-white">
                     Our History
                   </h1>
-                  <p className="mt-3 text-gray-700 dark:text-gray-300">
+                  <p className="mt-3 text-gray-700 dark:text-gray-200">
                     We started our detailing journey with a passion for cars and
                     a desire to provide high-quality detailing services. Located
                     in West Palm Beach, Florida, our mission is to make every
@@ -58,7 +69,11 @@ export default function About() {
 
               {/* Our Staff */}
               <div className="md:flex md:items-start md:-mx-4 md:pl-4">
-                <span className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim">
+                <span
+                  role="img"
+                  aria-label="Staff Icon"
+                  className="inline-block p-2 text-white dark:text-black bg-black dark:bg-white rounded-xl md:mx-4 border border-white shadow-neonDarkSlim dark:border-black dark:shadow-neonLightSlim"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -74,10 +89,10 @@ export default function About() {
                   </svg>
                 </span>
                 <div className="mt-4 md:mx-4 md:mt-0">
-                  <h1 className="text-xl font-semibold text-gray-900 capitalize dark:text-white">
+                  <h2 className="text-xl font-semibold text-gray-900 capitalize dark:text-white">
                     Our Staff
-                  </h1>
-                  <p className="mt-3 text-neutral-800 dark:text-gray-300">
+                  </h2>
+                  <p className="mt-3 text-neutral-800 dark:text-gray-200">
                     Our team is made up of skilled and passionate detailers who
                     take pride in their work. We are dedicated to providing the
                     best service and ensuring each vehicle receives the care and
@@ -107,10 +122,18 @@ export default function About() {
                   <h1 className="text-xl font-semibold text-gray-900 capitalize dark:text-white">
                     Contact Us
                   </h1>
-                  <p className="mt-3 text-neutral-800 dark:text-gray-300">
+                  <p className="mt-3 text-neutral-800 dark:text-gray-200">
                     Have questions or need to schedule an appointment? Contact
                     us by email at mathpatino@gmail.com or send us a direct
-                    message on Instagram @mathx.detailco
+                    message on Instagram{" "}
+                    <a
+                      target="_blank"
+                      draggable={false}
+                      href="https://www.instagram.com/mahtx.detailco/"
+                      className="hover:underline underline-offset-2"
+                    >
+                      @mathx.detailco
+                    </a>
                   </p>
                 </div>
               </div>
@@ -127,7 +150,7 @@ export default function About() {
                 draggable={false}
                 className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg border border-white dark:border-black shadow-neonDark dark:shadow-neonLight "
                 src="./MattSpray.webp"
-                alt=""
+                alt="Mathew Washing a Car"
               />
             </div>
           </div>
@@ -139,7 +162,7 @@ export default function About() {
             <h1 className="font-semibold text-black dark:text-white">
               Brands We Trust
             </h1>
-            <p className=" text-neutral-700 dark:text-neutral-400">
+            <p className=" text-neutral-700 dark:text-neutral-300">
               Ensures quality to keep your vehicle pristine.
             </p>
           </div>
@@ -147,6 +170,7 @@ export default function About() {
             <div className="flex items-center justify-center col-span-1">
               <img
                 draggable={false}
+                alt="Matthew spraying a car"
                 className="max-h-32 hover:scale-105 transition-all duration-300 ease-in-out"
                 src="https://www.hydrosilex.com/cdn/shop/files/hydrosilex_logo_2020_white_200x.png?v=1613736867"
               />

@@ -24,10 +24,14 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="bg-white  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent  transition-colors duration-500 ease-in-out">
+    <section
+      aria-labelledby="gallery-section-title"
+      className="bg-white  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent  transition-colors duration-500 ease-in-out"
+    >
       <div className="container px-4 pb-8 lg:pb-16 mx-auto">
         <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
+            id="gallery-section-title"
             className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
@@ -40,7 +44,7 @@ const Gallery = () => {
         <GalleryImages loadImages={detailImages} />
         <hr className="my-4 lg:my-8 mx-8 border-neutral-700" />
       </div>
-    </div>
+    </section>
   );
 };
 

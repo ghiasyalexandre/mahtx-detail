@@ -29,10 +29,10 @@ export default function MainNav() {
             <Link to="/" draggable={false} aria-label="Go Home">
               <img
                 draggable={false}
-                aria-label="Logo"
+                aria-label="Mathx Logo"
                 className="w-auto ml-2 mr-4 h-16 scale-125 hover:scale-140  sm:hover:scale-140 transition-transform ease-in-out duration-300"
                 src="./logoTrimCropped.webp"
-                alt="logo"
+                alt="Mathx Logo"
               />
             </Link>
 

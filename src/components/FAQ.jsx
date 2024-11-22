@@ -17,10 +17,14 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-colors duration-500 ease-in-out">
+    <section
+      aria-labelledby="faq-section-title"
+      className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-colors duration-500 ease-in-out"
+    >
       <div className="container px-6 pb-16 sm:pb-44 mx-auto md:px-24">
         <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
+            id="faq-section-title"
             className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
@@ -30,7 +34,7 @@ export default function FAQ() {
         </div>
         <hr className="my-4 mx-0 lg:my-8 border-neutral-200 dark:border-neutral-700" />
 
-        <div>
+        <div role="list">
           {[...Array(5)].map((_, index) => (
             <div
               key={index}
@@ -38,9 +42,11 @@ export default function FAQ() {
                 fadeIn ? "opacity-100" : "opacity-0"
               }`}
               style={{ transitionDelay: `${index * 200}ms` }}
+              role="listitem"
             >
               <button
-                aria-label="Frequently Asked Questions"
+                aria-expanded={isOpen[index]}
+                aria-controls={`faq-answer-${index}`}
                 onClick={() => toggleOpen(index)}
                 className="flex items-center focus:outline-none shadow-lg shadow-black/30 dark:shadow-white/20"
               >
@@ -75,7 +81,7 @@ export default function FAQ() {
                     />
                   </svg>
                 )}
-                <h1 className="mx-4 text-xl text-neutral-50 dark:text-white">
+                <h2 className="mx-4 text-xl text-neutral-50 dark:text-white">
                   {
                     [
                       "How do I book a detailing service?",
@@ -85,11 +91,15 @@ export default function FAQ() {
                       "How can I pay for my detailing service?",
                     ][index]
                   }
-                </h1>
+                </h2>
               </button>
 
               {isOpen[index] && (
-                <div className="flex mt-8 md:mx-10 ">
+                <div
+                  id={`faq-answer-${index}`}
+                  role="region"
+                  className="flex mt-8 md:mx-10 "
+                >
                   <span className="border border-s-2 border-black dark:border-white "></span>
 
                   <p className="max-w-3xl lg:text-lg lg:max-w-full text-justify px-4 text-neutral-700 dark:text-neutral-300">
@@ -110,6 +120,6 @@ export default function FAQ() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
