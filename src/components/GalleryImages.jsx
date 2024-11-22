@@ -60,7 +60,7 @@ export default function GalleryImages({ loadImages }) {
                 {/* Image container */}
                 <figure
                   aria-labelledby={`gallery-image-${index}`}
-                  className="h-[290px] sm:h-[230px] md:h-[200px] lg:h-[270px] xl:h-[350px] w-full hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className="h-[290px] sm:h-[230px] md:h-[200px] lg:h-[270px] xl:h-[350px] w-full hover:scale-105 pointer-events-none transition-transform duration-300 ease-in-out"
                 >
                   <img
                     src={placedImage}

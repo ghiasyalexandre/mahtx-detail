@@ -22,7 +22,10 @@ export default function MainNav() {
   };
 
   return (
-    <nav className="shadow-neonDark dark:shadow-neonLight z-50 sticky top-0 w-full bg-black">
+    <nav
+      aria-label="Main Navigation"
+      className="shadow-neonDark dark:shadow-neonLight z-50 sticky top-0 w-full bg-black"
+    >
       <div className="px-4 py-4">
         <div className="md:flex md:items-center">
           <div className="flex items-center justify-between ">
@@ -89,7 +92,7 @@ export default function MainNav() {
               <Link
                 to="/"
                 draggable={false}
-                aria-label="Home"
+                aria-label="Navigate to the home page"
                 className="mt-2 hover:underline-offset-8 hover:underline transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
                 Home
@@ -121,7 +124,7 @@ export default function MainNav() {
               <Link
                 to="/about"
                 draggable={false}
-                aria-label="About Us"
+                aria-label="Learn more about us"
                 className="md:text-center mt-2 hover:underline-offset-8 hover:underline  transition-colors duration-300 transform md:mt-0 md:mx-4 hover:text-gray-200"
               >
                 About Us
@@ -143,7 +146,7 @@ export default function MainNav() {
                 draggable={false}
                 aria-label="Instagram"
                 href="https://www.instagram.com/mahtx.detailco/"
-                target="blank"
+                target="_blank"
                 className="hidden md:block mx-1 lg:mx-2 p-2 font-semibold text-white border-black  bg-black hover:border-white hover:bg-neutral-200 focus:ring-2 ring-white hover:text-black rounded-full transition-colors ease-in-out duration-300"
               >
                 <svg
@@ -157,7 +160,7 @@ export default function MainNav() {
               </a>
               <button
                 onClick={toggleTheme}
-                aria-label="Light or Dark Mode"
+                aria-label="Toggle Light or Dark Mode"
                 className="mx-1 lg:mx-2 p-2 font-semibold text-black bg-white/30 md:bg-white/80 border-black dark:text-white dark:bg-black/30 dark:hover:bg-neutral-200 dark:hover:text-black hover:border-white hover:bg-neutral-800 hover:text-neutral-300 rounded-full"
               >
                 {theme === "light" ? (
