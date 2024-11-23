@@ -72,13 +72,13 @@ export default function MyDatePicker({ onDateChange }) {
               <Heading className="flex-1 font-semibold text-2xl ml-2" />
               <Button
                 slot="previous"
-                className="w-9 h-9 outline-none cursor-default bg-transparent text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
+                className="w-9 h-9 outline-none cursor-default font-bold bg-transparent text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
               >
                 {"<"}
               </Button>
               <Button
                 slot="next"
-                className="w-9 h-9 outline-none cursor-default bg-transparent  text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
+                className="w-9 h-9 outline-none cursor-default font-bold bg-transparent  text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
               >
                 {">"}
               </Button>
