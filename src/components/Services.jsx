@@ -537,7 +537,7 @@ export default function ServiceSelection() {
                     />
                   </div>
 
-                  <div className="flex-1 pl-2 mt-4 md:mt-0">
+                  <div className="flex-1 md:pl-2 mt-4 md:mt-0">
                     <label className="block mb-2 ml-2 text-sm text-gray-600 dark:text-gray-200">
                       Last Name
                     </label>
