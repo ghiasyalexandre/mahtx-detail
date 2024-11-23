@@ -30,7 +30,7 @@ export default function MyDatePicker({ onDateChange }) {
       <Label className=" dark:text-white text-black cursor-default">
         Schedule for
       </Label>
-      <Group className="flex rounded-lg invert dark:invert-0 bg-black/90 border border-white focus-within:text-white group-open:bg-neutral-900 transition pl-3 shadow-md text-neutral-400 focus-visible:ring-2 ring-white">
+      <Group className="flex rounded-lg invert-0 dark:invert bg-black border border-white focus-within:text-white group-open:bg-neutral-900 transition pl-3 shadow-md text-neutral-400 focus-visible:ring-2 ring-white">
         <DateInput className="flex flex-1 py-2">
           {(segment) => (
             <DateSegment
@@ -39,7 +39,7 @@ export default function MyDatePicker({ onDateChange }) {
             />
           )}
         </DateInput>
-        <Button className="outline-none px-3 flex items-center  text-gray-200 transition  rounded-l-none  border-l border-l-white bg-transparent  pressed:bg-neutral-900 focus-visible:ring-2 ring-black">
+        <Button className="outline-none px-3 flex items-center  text-neutral-200 transition  rounded-l-none  border-l border-l-white bg-transparent  pressed:bg-neutral-900 focus-visible:ring-2 ring-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="invert"
@@ -66,19 +66,19 @@ export default function MyDatePicker({ onDateChange }) {
         </Button>
       </Group>
       <MyPopover>
-        <Dialog className="p-6 text-gray-600">
-          <Calendar>
-            <header className="flex items-center gap-1 pb-4 px-1 font-serif w-full">
+        <Dialog className="p-3 text-neutral-700 dark:bg-black border rounded-lg border-black dark:border-white">
+          <Calendar className="dark:invert">
+            <header className="flex items-center gap-1 pb-4 px-1  w-full">
               <Heading className="flex-1 font-semibold text-2xl ml-2" />
               <Button
                 slot="previous"
-                className="w-9 h-9 outline-none cursor-default bg-transparent text-gray-700 border-0 rounded-full flex items-center justify-center hover:bg-gray-100 pressed:bg-gray-200 focus-visible:ring ring-neutral-600/70 ring-offset-2"
+                className="w-9 h-9 outline-none cursor-default bg-transparent text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
               >
                 {"<"}
               </Button>
               <Button
                 slot="next"
-                className="w-9 h-9 outline-none cursor-default bg-transparent  text-gray-700 border-0 rounded-full flex items-center justify-center hover:bg-gray-100 pressed:bg-gray-200 focus-visible:ring ring-neutral-600/70 ring-offset-2"
+                className="w-9 h-9 outline-none cursor-default bg-transparent  text-neutral-700 border-0 rounded-full flex items-center justify-center hover:bg-neutral-200 pressed:bg-neutral-300 focus-visible:ring ring-neutral-600/70 ring-offset-2"
               >
                 {">"}
               </Button>
@@ -86,7 +86,7 @@ export default function MyDatePicker({ onDateChange }) {
             <CalendarGrid className="border-spacing-1 border-separate">
               <CalendarGridHeader>
                 {(day) => (
-                  <CalendarHeaderCell className="text-xs text-gray-500 font-semibold">
+                  <CalendarHeaderCell className="text-xs text-neutral-500 font-semibold">
                     {day}
                   </CalendarHeaderCell>
                 )}
@@ -95,7 +95,7 @@ export default function MyDatePicker({ onDateChange }) {
                 {(date) => (
                   <CalendarCell
                     date={date}
-                    className="w-9 h-9 outline-none cursor-default rounded-full flex items-center justify-center outside-month:text-gray-300 hover:bg-gray-100 pressed:bg-gray-200 selected:bg-gray-700 selected:text-white focus-visible:ring ring-gray-600/70 ring-offset-2"
+                    className="w-9 h-9 outline-none cursor-default rounded-full flex items-center justify-center outside-month:text-neutral-300 hover:bg-neutral-200 pressed:bg-neutral-300 selected:bg-neutral-700 selected:text-white focus-visible:ring ring-neutral-600/70 ring-offset-2"
                   />
                 )}
               </CalendarGridBody>
