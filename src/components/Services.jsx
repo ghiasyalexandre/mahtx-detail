@@ -1,9 +1,8 @@
 import { useState, useRef, useEffect } from "react";
-import DatePicker from "react-datepicker";
 import emailjs from "@emailjs/browser";
-import "react-datepicker/dist/react-datepicker.module.css";
 import ServiceNav from "./ServiceNav";
 import { detailImages } from "./Gallery";
+import MyDatePicker from "./MyDatePicker";
 
 export default function ServiceSelection() {
   const [selectedItems, setSelectedItems] = useState({
@@ -286,7 +285,7 @@ export default function ServiceSelection() {
   useEffect(() => {
     const selectedServiceTitles = ["services", "packages", "aircraftServices"]
       .flatMap((category) =>
-        getCategoryItems()
+        getCategoryItems(category)
           .filter((item) => selectedItems[category].includes(item.id))
           .map((item) => item.title)
       )
@@ -667,28 +666,10 @@ export default function ServiceSelection() {
           <div className="">
             {!showContactInfo ? (
               <div className="">
-                <label
-                  htmlFor="Schedule"
-                  className="block text-neutral-600 dark:text-neutral-300"
-                >
-                  Schedule for
-                </label>
                 <div className="flex flex-col ">
-                  <DatePicker
-                    selected={selectedDate}
-                    onChange={(date) => setSelectedDate(date)}
-                    showTimeSelect
-                    minDate={new Date()}
-                    holidays={[
-                      { date: "2024-12-31", holidayName: "New Year's Eve" },
-                      { date: "2024-12-25", holidayName: "Christmas" },
-                      { date: "2025-01-01", holidayName: "New Year's Day" },
-                      { date: "2025-11-23", holidayName: "Thanksgiving Day" },
-                    ]}
-                    showDisabledMonthNavigation
-                    dateFormat="Pp"
-                    className="block my-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-gray-200 bg-white shadow-black/30 shadow-md px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
-                  />
+                  <div className="relative">
+                    <MyDatePicker onDateChange={setSelectedDate} />
+                  </div>
                   {!showCategories && !showContactInfo && (
                     <div className="flex gap-2">
                       <button
@@ -715,7 +696,8 @@ export default function ServiceSelection() {
                   htmlFor="Schedule"
                   className="block text-neutral-700 dark:text-neutral-300"
                 >
-                  Scheduled for {selectedDate.toString().substring(0, 21)}
+                  Scheduled for{" "}
+                  {selectedDate.toString().replace("T", " @ ").split(".")[0]}
                 </p>
                 <div className="flex flex-row gap-2">
                   <button
