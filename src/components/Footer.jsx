@@ -39,7 +39,7 @@ export default function Footer() {
 
             <hr className="mt-8 border-neutral-700 dark:border-neutral-700" />
 
-            <div className="flex flex-col-reverse shadow-neonDarkSlim bg-black py-2 px-2 items-center sm:flex-row sm:justify-between">
+            <div className="flex flex-col-reverse shadow-neonDarkSlim bg-black py-2 pb-4 px-2 xs:px-3 sm:px-4 items-center sm:flex-row sm:justify-between">
               <p className="text-sm text-neutral-500 mt-2">
                 © 2024, MahtX Detail Co
               </p>

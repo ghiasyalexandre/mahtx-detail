@@ -353,10 +353,10 @@ export default function ServiceSelection() {
   };
 
   return (
-    <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent lg:px-12 xl:px-20 2xl:px-28 transition-colors duration-500 ease-in-out">
+    <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent xs:px-2 md:px-12 lg:px-12 xl:px-20 2xl:px-28 transition-colors duration-500 ease-in-out">
       <div className="flex flex-col items-center gap-4 pb-4 lg:pb-0 pt-8 sm:pt-12 lg:pt-16 text-center">
         <h1
-          className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
+          className={`text-black dark:text-white font-bold text-5xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
             fadeInTitle ? "opacity-100" : "opacity-0"
           }`}
           aria-labelledby="booking-heading"
@@ -393,7 +393,7 @@ export default function ServiceSelection() {
                     <button
                       aria-label="Select Service Category"
                       onClick={() => handleCategoryView(category.key)}
-                      className="mt-4 flex items-center text-sm text-white border border-white hover:text-black hover:bg-white hover:border-black transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
+                      className="mt-4 flex items-center text-sm font-normal text-white dark:invert border border-white hover:text-black hover:bg-white hover:border-black transition-colors duration-300 ease-in-out px-4 py-2 rounded-md"
                     >
                       Select
                     </button>
@@ -414,17 +414,17 @@ export default function ServiceSelection() {
                   >
                     <div className="p-6 w-3/4 sm:w-2/3 flex flex-col justify-between">
                       <div>
-                        <h3 className="text-xl font-semibold mb-2 text-neutral-900 dark:text-white">
+                        <h3 className="text-xl xl:text-2xl font-semibold mb-2 text-neutral-900 dark:text-white">
                           {service.title}
                         </h3>
-                        <p className="text-lg font-bold text-neutral-700 dark:text-neutral-300">
+                        <p className="text-lg font-bold text-neutral-800 dark:text-neutral-200">
                           ${service.price}.00
                         </p>
                         <div className="mt-2 flex items-center space-x-2">
-                          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm shadow-lg shadow-black/20 dark:shadow-white/20">
+                          <span className="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-sm shadow-md shadow-black/20 dark:shadow-white/20">
                             Service
                           </span>
-                          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm shadow-lg shadow-black/20 dark:shadow-white/20">
+                          <span className="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-sm shadow-md shadow-black/20 dark:shadow-white/20">
                             {service.duration}
                           </span>
                         </div>
@@ -493,7 +493,7 @@ export default function ServiceSelection() {
                                 service.id
                               )
                             }
-                            className="flex items-center text-sm text-white border border-white hover:bg-white hover:text-black px-4 py-2 rounded-md hover:scale-105 transition-all duration-300 ease-in-out dark:shadow-white/30 shadow-black/30 shadow-md"
+                            className="flex items-center text-sm dark:invert font-normal text-white border border-white hover:bg-white hover:text-black px-4 py-2 rounded-md hover:scale-105 transition-all duration-300 ease-in-out dark:shadow-white/30 shadow-black/30 shadow-md"
                           >
                             <span className="mr-2 py-1">&#128722;</span>Select
                           </button>
@@ -533,7 +533,7 @@ export default function ServiceSelection() {
                       value={formData.first_name}
                       onChange={handleInputChange}
                       aria-label="First Name"
-                      className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
@@ -547,7 +547,7 @@ export default function ServiceSelection() {
                       aria-label="Last Name"
                       value={formData.last_name}
                       onChange={handleInputChange}
-                      className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-4 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
                 </div>
@@ -563,7 +563,7 @@ export default function ServiceSelection() {
                     aria-label="User Email"
                     value={formData.user_email}
                     onChange={handleInputChange}
-                    className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-4 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
 
@@ -578,7 +578,7 @@ export default function ServiceSelection() {
                     aria-label="Phone Number"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-4 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
 
@@ -591,7 +591,7 @@ export default function ServiceSelection() {
                     value={formData.message}
                     aria-label="Message"
                     onChange={handleInputChange}
-                    className=" block w-full h-32 px-5 py-2.5 my-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                    className=" block w-full h-32 px-4 py-2.5 my-2 border rounded-lg placeholder-gray-600/50 bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Optional notes or requests..."
                   ></textarea>
                 </div>
@@ -620,7 +620,7 @@ export default function ServiceSelection() {
 
         {/* Summary Section */}
         <div className="lg:w-1/3 lg:ml-2 m-4 p-4 border rounded-lg shadow-lg shadow-black/20 dark:shadow-white/20 transition-all transform-gpu duration-500 ease-in-out">
-          <h3 className="text-2xl text-center font-semibold mb-3 text-black dark:text-white">
+          <h3 className="text-2xl xl:text-3xl text-center font-semibold mb-3 text-black dark:text-white">
             Summary
           </h3>
           <hr className="mt-0 mb-4 border-neutral-700" />

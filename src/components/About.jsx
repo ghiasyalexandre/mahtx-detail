@@ -148,7 +148,7 @@ export default function About() {
             >
               <img
                 draggable={false}
-                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg border border-white dark:border-black shadow-neonDark dark:shadow-neonLight "
+                className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-lg border border-white dark:border-black shadow-neonDarkSlim dark:shadow-neonLightSlim "
                 src="./MattSpray.webp"
                 alt="Mathew Washing a Car"
               />

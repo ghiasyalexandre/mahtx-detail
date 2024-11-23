@@ -26,13 +26,13 @@ const Gallery = () => {
   return (
     <section
       aria-labelledby="gallery-section-title"
-      className="bg-white  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent  transition-colors duration-500 ease-in-out"
+      className="bg-white   dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent  transition-colors duration-500 ease-in-out"
     >
       <div className="container px-4 pb-0 lg:pb-4 mx-auto">
         <div className="flex flex-col items-center gap-4 pb-4 lg:pb-0 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
             id="gallery-section-title"
-            className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
+            className={`text-black dark:text-white font-bold text-5xl  sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
           >

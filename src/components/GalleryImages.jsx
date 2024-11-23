@@ -60,13 +60,13 @@ export default function GalleryImages({ loadImages }) {
                 {/* Image container */}
                 <figure
                   aria-labelledby={`gallery-image-${index}`}
-                  className=" h-[290px] sm:h-[230px] md:h-[200px] lg:h-[270px] xl:h-[350px] w-full hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className=" h-[290px] sm:h-[230px] md:h-[250px] lg:h-[270px] xl:h-[350px] w-full hover:scale-105 transition-transform duration-300 ease-in-out"
                 >
                   <img
                     src={placedImage}
                     alt={`Gallery image ${index + 1}`}
                     draggable={false}
-                    className="gallery-image object-cover mx-auto w-auto h-full cursor-pointer rounded-lg shadow-lg shadow-black/30 dark:shadow-white/20"
+                    className="gallery-image object-cover mx-auto w-full h-full cursor-pointer rounded-lg shadow-lg shadow-black/30 dark:shadow-white/20"
                   />{" "}
                   <figcaption id={`gallery-image-${index}`} className="sr-only">
                     Gallery image {index + 1}

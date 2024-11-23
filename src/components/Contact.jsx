@@ -68,11 +68,11 @@ export default function Contact() {
             <div className="lg:w-1/2 lg:mx-6">
               <h1
                 aria-label="Contact Us for More Info"
-                className=" text-center text-pretty lg:mr-48 lg:text-left text-4xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl"
+                className=" text-center text-pretty lg:mr-48 lg:text-left text-5xl font-bold text-gray-800  dark:text-white md:text-6xl xl:text-7xl"
               >
-                Contact Us for More Info
+                Contact Us
               </h1>
-              <hr className="lg:mb-2 mt-4 lg:mt-6 lg:mr-24 2xl:mr-48 border-neutral-700 dark:border-neutral-700" />
+              <hr className="lg:mb-2 mt-4 lg:mt-6 lg:mr-24 2xl:mr-48 border-neutral-300 dark:border-neutral-700" />
 
               <div className="mt-6 space-y-4 sm:space-y-0 lg:space-y-8 block md:mt-8 sm:flex sm:justify-between lg:block text-xl">
                 <p className="flex items-center -mx-2 -ml-1">
