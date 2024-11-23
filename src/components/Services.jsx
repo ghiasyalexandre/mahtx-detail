@@ -595,7 +595,7 @@ export default function ServiceSelection() {
                     value={formData.message}
                     aria-label="Message"
                     onChange={handleInputChange}
-                    className="block w-full h-16 lg:h-32 px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
+                    className=" block w-full h-32 px-5 py-2.5 my-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Optional notes or requests"
                   ></textarea>
                 </div>
@@ -697,7 +697,8 @@ export default function ServiceSelection() {
                   className="block text-neutral-700 dark:text-neutral-300"
                 >
                   Scheduled for{" "}
-                  {selectedDate.toString().replace("T", " @ ").split(".")[0]}
+                  {selectedDate.toString().replace("T", " @ ").split(".")[0]}{" "}
+                  EST
                 </p>
                 <div className="flex flex-row gap-2">
                   <button
