@@ -353,8 +353,8 @@ export default function ServiceSelection() {
   };
 
   return (
-    <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-colors duration-500 ease-in-out">
-      <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
+    <div className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent lg:px-12 xl:px-20 2xl:px-28 transition-colors duration-500 ease-in-out">
+      <div className="flex flex-col items-center gap-4 pb-4 lg:pb-0 pt-8 sm:pt-12 lg:pt-16 text-center">
         <h1
           className={`text-black dark:text-white font-bold text-4xl sm:text-6xl transition-opacity transform duration-1000 ease-in-out  ${
             fadeInTitle ? "opacity-100" : "opacity-0"
@@ -365,7 +365,7 @@ export default function ServiceSelection() {
         </h1>
       </div>
       <hr className="my-4 mx-4 lg:my-8 border-neutral-700" />
-      <div className="flex flex-col lg:flex-row   md:pb-24">
+      <div className="flex flex-col lg:flex-row   md:pb-8 lg:pb-0">
         <div className="flex-1 p-4 lg:pr-2 ">
           <ServiceNav
             showCategories={showCategories}
@@ -532,7 +532,6 @@ export default function ServiceSelection() {
                       name="first_name"
                       value={formData.first_name}
                       onChange={handleInputChange}
-                      placeholder="Maht"
                       aria-label="First Name"
                       className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     />
@@ -548,7 +547,6 @@ export default function ServiceSelection() {
                       aria-label="Last Name"
                       value={formData.last_name}
                       onChange={handleInputChange}
-                      placeholder="X"
                       className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -565,7 +563,6 @@ export default function ServiceSelection() {
                     aria-label="User Email"
                     value={formData.user_email}
                     onChange={handleInputChange}
-                    placeholder="mahtx@example.com"
                     className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
@@ -581,7 +578,6 @@ export default function ServiceSelection() {
                     aria-label="Phone Number"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    placeholder="123-456-7890"
                     className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white  focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
                   />
                 </div>
@@ -596,7 +592,7 @@ export default function ServiceSelection() {
                     aria-label="Message"
                     onChange={handleInputChange}
                     className=" block w-full h-32 px-5 py-2.5 my-2 border rounded-lg placeholder-gray-600/50 bg-neutral-300 dark:bg-neutral-900 text-gray-900 dark:text-gray-300 border-neutral-700 dark:border-white focus:ring-neutral-400/50 dark:focus:ring-white focus:outline-none focus:ring focus:ring-opacity-40"
-                    placeholder="Optional notes or requests"
+                    placeholder="Optional notes or requests..."
                   ></textarea>
                 </div>
 
@@ -735,7 +731,7 @@ export default function ServiceSelection() {
         </div>
       </div>
 
-      <hr className="mt-4 md:my-2 lg:mt-24 mx-4  dark:border-neutral-700" />
+      <hr className="mt-4 md:mt-2 lg:mt-8 mx-4  dark:border-neutral-700" />
     </div>
   );
 }

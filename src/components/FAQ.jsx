@@ -21,7 +21,7 @@ export default function FAQ() {
       aria-labelledby="faq-section-title"
       className="bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-colors duration-500 ease-in-out"
     >
-      <div className="container px-6 pb-16 sm:pb-44 mx-auto md:px-24">
+      <div className="container px-6 md:pb-6 mx-auto md:px-24">
         <div className="flex flex-col items-center gap-4 pb-4 pt-8 sm:pt-12 lg:pt-16 text-center">
           <h1
             id="faq-section-title"
@@ -32,7 +32,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
         </div>
-        <hr className="my-4 mx-0 lg:my-8 border-neutral-200 dark:border-neutral-700" />
+        <hr className="my-4 mx-0 lg:mb-8 border-neutral-200 dark:border-neutral-700" />
 
         <div role="list">
           {[...Array(5)].map((_, index) => (
@@ -109,13 +109,13 @@ export default function FAQ() {
                         "We offer a variety of detailing packages, including Interior Detailing, Exterior Detailing, Engine Detailing, Ceramic Coating, and Full Detailing Packages. Each package is tailored to meet specific needs, and you can choose based on the level of care and protection you want for your vehicle.",
                         "The duration of a detailing session depends on the type of service selected. On average, an Interior or Exterior Detailing takes 2-4 hours, while a Full Detailing Package can take up to 6 hours. We strive to provide the highest quality service without rushing the process.",
                         "We use premium quality detailing products that are safe for your vehicle. This includes pH-neutral car shampoos, high-quality waxes, ceramic coatings, and specialized cleaners for different surfaces. Our products are carefully selected to ensure the best results and to protect your vehicle's surfaces.",
-                        "We accept various payment methods, including credit/debit cards, PayPal, and cash. Payment can be made at the time of booking or upon completion of the detailing service.",
+                        "We accept various payment methods, including PayPal, Venmo, Zelle, and cash. Payment can be made at the time of booking or upon completion of the detailing service.",
                       ][index]
                     }
                   </p>
                 </div>
               )}
-              <hr className="my-8 border-neutral-200 dark:border-neutral-700" />
+              <hr className="my-8 border-neutral-300 dark:border-neutral-700" />
             </div>
           ))}
         </div>

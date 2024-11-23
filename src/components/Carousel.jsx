@@ -41,7 +41,7 @@ const cardDetails = {
 
 const Carousel = () => {
   return (
-    <div className="overflow-hidden w-full h-[225px] lg:h-[300px] relative border-y border-white shadow-neonDark dark:shadow-neonLight">
+    <div className="overflow-hidden w-full h-[225px] lg:h-[280px] relative border-y border-white shadow-neonDark dark:shadow-neonLight">
       <div className="carousel-track">
         {Object.keys(detailImages).map((index) => {
           return (

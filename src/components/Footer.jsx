@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <>
       {showFooter && (
-        <footer className={``}>
-          <div className="px-4 py-4 mx-auto">
+        <footer className="pt-4 lg:pt-6 bg-white dark:bg-transparent">
+          <div className="">
             <div className="flex flex-col items-center text-center">
               <Link
                 to="/"
@@ -17,7 +17,7 @@ export default function Footer() {
                 className="relative inline-block"
               >
                 <img
-                  className="w-auto h-32 hover:scale-110 transition-transform duration-500 ease-in-out"
+                  className="w-auto h-32 hover:scale-110 invert dark:invert-0 transition-transform duration-500 ease-in-out"
                   src="./logoCropped.webp"
                   alt=""
                   aria-label="Logo"
@@ -27,20 +27,20 @@ export default function Footer() {
 
               <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
                 <Link
-                  to="/services"
+                  to="/booking"
                   draggable={false}
                   aria-label="View Services"
-                  className="px-5 py-2 text-sm font-semibold tracking-wide shadow-lg scale-105 text-black hover:shadow-white/30 hover:scale-110 transition-all capitalize  duration-300 transform bg-white rounded-md sm:mx-2 sm:order-2 w-64  focus:outline-none focus:ring focus:ring-neutral-300 dark:focus:ring-white focus:ring-opacity-80"
+                  className="px-5 py-2 text-sm font-semibold tracking-wide shadow-lg scale-105 invert dark:invert-0 text-black hover:shadow-white/30 hover:scale-110 transition-all capitalize  duration-300 transform bg-white rounded-md sm:mx-2 sm:order-2 w-64  focus:outline-none focus:ring focus:ring-neutral-300 dark:focus:ring-white focus:ring-opacity-80"
                 >
                   Book Now
                 </Link>
               </div>
             </div>
 
-            <hr className="my-8 border-neutral-700 dark:border-neutral-700" />
+            <hr className="mt-8 border-neutral-700 dark:border-neutral-700" />
 
-            <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-              <p className="text-sm text-neutral-500">
+            <div className="flex flex-col-reverse shadow-neonDarkSlim bg-black py-2 px-2 items-center sm:flex-row sm:justify-between">
+              <p className="text-sm text-neutral-500 mt-2">
                 © 2024, MahtX Detail Co
               </p>
 

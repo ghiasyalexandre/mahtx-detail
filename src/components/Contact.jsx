@@ -58,24 +58,23 @@ export default function Contact() {
 
   return (
     <div>
-      <div className=" bg-white  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent pt-16 pb-8 lg:pb-32 transition-all duration-500 ease-in-out">
-        <div className="container px-6 sm:px-12 lg:px-20 mx-auto">
+      <div className=" bg-white flex justify-center  dark:bg-transparent dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent pt-16 pb-8 lg:pb-16 transition-all duration-500 ease-in-out">
+        <div className="container px-6 sm:px-12 lg:px-12 lg:py-12 mx-auto lg:mx-16 xl:mx-32 2xl:mx-52 lg:border border-black dark:border-white lg:shadow-neonDark lg:dark:shadow-neonLightSlim lg:rounded-lg">
           <div
-            className={`lg:flex lg:items-center lg:-mx-6 transition-all duration-700 ease-in-out ${
+            className={`lg:flex lg:items-center lg:-space-x-8 transition-all duration-700 ease-in-out ${
               fadeIn ? "opacity-100" : "opacity-0"
             }`}
           >
             <div className="lg:w-1/2 lg:mx-6">
               <h1
                 aria-label="Contact Us for More Info"
-                className=" text-center  lg:text-left text-3xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl"
+                className=" text-center text-pretty lg:mr-48 lg:text-left text-4xl font-bold text-gray-800  dark:text-white md:text-5xl xl:text-6xl"
               >
-                Contact Us for <br className="block sm:hidden lg:block" /> More
-                Info
+                Contact Us for More Info
               </h1>
-              <hr className="mb-2 mt-6 lg:mr-48 border-neutral-700 dark:border-neutral-700" />
+              <hr className="lg:mb-2 mt-4 lg:mt-6 lg:mr-24 2xl:mr-48 border-neutral-700 dark:border-neutral-700" />
 
-              <div className="mt-6 space-y-8 sm:space-y-0 lg:space-y-8 block md:mt-8 sm:flex sm:justify-between lg:block text-xl">
+              <div className="mt-6 space-y-4 sm:space-y-0 lg:space-y-8 block md:mt-8 sm:flex sm:justify-between lg:block text-xl">
                 <p className="flex items-center -mx-2 -ml-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,10 +156,10 @@ export default function Contact() {
                 </p>
               </div>
 
-              <div className="mt-6 w-80 md:mt-8">
+              <div className="mt-6 w-80 lg:mt-8">
                 <h3 className="text-gray-600 dark:text-gray-300 ">Follow us</h3>
 
-                <div className="flex mt-4 -mx-1.5 ">
+                <div className="flex mt-3 -mx-1.5 ">
                   <a
                     draggable={false}
                     aria-label="Visit our LinkedIn page"
@@ -236,10 +235,10 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-8 lg:w-1/2 lg:mx-6">
+            <div className="mt-4 lg:mt-0 lg:w-1/2 lg:mx-6">
               <div className="w-full px-8 py-6 mx-auto overflow-hidden bg-neutral-50 rounded-lg shadow-lg dark:shadow-md dark:bg-neutral-800 lg:max-w-xl shadow-black/50 dark:shadow-white/20">
                 <form
-                  className="mt-6 "
+                  className=""
                   onSubmit={handleSubmit}
                   aria-label="Contact Form"
                 >
@@ -254,7 +253,6 @@ export default function Contact() {
                       onChange={handleChange}
                       aria-label="Name"
                       required
-                      placeholder="John Doe"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-neutral-600 dark:bg-neutral-900 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 focus:ring-blue-400 dark:focus:ring-neutral-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -269,7 +267,6 @@ export default function Contact() {
                       aria-label="Phone Number"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="954-555-1234"
                       className="block w-full px-5 py-3 mt-2 text-neutral-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-neutral-600 dark:bg-neutral-900 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 dark:focus:ring-neutral-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -285,7 +282,6 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="johndoe@example.com"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-neutral-600 dark:bg-neutral-900 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 dark:focus:ring-neutral-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
@@ -300,8 +296,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 dark:bg-neutral-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-neutral-600 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 dark:focus:ring-neutral-400 focus:ring-blue-100 focus:outline-none focus:ring focus:ring-opacity-40"
-                      placeholder="Your message"
+                      className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 dark:bg-neutral-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md  dark:placeholder-neutral-600 dark:text-gray-300 dark:border-neutral-700 focus:border-blue-400 dark:focus:border-neutral-500 dark:focus:ring-neutral-400 focus:ring-blue-100 focus:outline-none focus:ring focus:ring-opacity-40"
                     ></textarea>
                   </div>
 
@@ -328,7 +323,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+      </div>{" "}
+      <hr className=" border-neutral-400  dark:border-neutral-800" />
     </div>
   );
 }

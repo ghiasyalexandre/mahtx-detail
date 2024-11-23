@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
           <br />
           mattp@mahtxautocare.com
         </p>
-        <hr className="my-12 mx-0 border-gray-200 dark:border-neutral-700" />
+        <hr className="mt-12 mx-0 border-gray-200 dark:border-neutral-700" />
       </div>
     </div>
   );

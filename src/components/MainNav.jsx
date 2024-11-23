@@ -24,7 +24,7 @@ export default function MainNav() {
   return (
     <nav
       aria-label="Main Navigation"
-      className="shadow-neonDark dark:shadow-neonLight z-50 sticky top-0 w-full bg-black"
+      className="shadow-neonDarkSlim dark:shadow-neonLight z-50 sticky top-0 w-full bg-black"
     >
       <div className="px-4 py-4">
         <div className="md:flex md:items-center">
@@ -140,7 +140,7 @@ export default function MainNav() {
             </div>
           </div>
 
-          <div className=" fixed flex right-2 bottom-2 z-50 md:static md:mr-0">
+          <div className=" fixed flex right-2 bottom-16 z-50 md:static md:mr-0">
             <div className="flex justify-end transition-all ease-in-out duration-300">
               <a
                 draggable={false}

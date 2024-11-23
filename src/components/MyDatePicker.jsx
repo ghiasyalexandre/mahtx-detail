@@ -27,15 +27,15 @@ export default function MyDatePicker({ onDateChange }) {
       maxVisibleMonths={6}
       onChange={(date) => onDateChange(date)} // Pass selected date to parent
     >
-      <Label className="dark:text-white text-black cursor-default">
+      <Label className=" dark:text-white text-black cursor-default">
         Schedule for
       </Label>
-      <Group className="flex rounded-lg bg-black/90 border border-white focus-within:text-white group-open:bg-neutral-900 transition pl-3 shadow-md text-neutral-400 focus-visible:ring-2 ring-white">
+      <Group className="flex rounded-lg invert dark:invert-0 bg-black/90 border border-white focus-within:text-white group-open:bg-neutral-900 transition pl-3 shadow-md text-neutral-400 focus-visible:ring-2 ring-white">
         <DateInput className="flex flex-1 py-2">
           {(segment) => (
             <DateSegment
               segment={segment}
-              className="px-0.5 tabular-nums outline-none rounded-sm focus:bg-neutral-400 focus:text-white caret-transparent placeholder-shown:italic"
+              className="px-[1px]  outline-none rounded-sm focus:bg-neutral-400 focus:text-white caret-transparent placeholder-shown:italic"
             />
           )}
         </DateInput>

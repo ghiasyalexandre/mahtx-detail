@@ -1,6 +1,6 @@
 export default function ServiceNav({ showOptions, showContactInfo }) {
   return (
-    <div className="shadow-md shadow-black/20 border dark:border-white flex items-center justify-center rounded-lg md:justify-start px-1 sm:px-2 py-2 lg:py-4 lg:px-4 mb-4">
+    <div className="shadow-md shadow-black/20 border dark:border-white flex items-center justify-center rounded-lg lg:justify-start px-1 sm:px-2 py-2 lg:py-4 lg:px-4 mb-4">
       <div className="flex items-center text-neutral-900 dark:text-neutral-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"

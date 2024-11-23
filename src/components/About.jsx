@@ -209,7 +209,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <hr className="mt-12 mb-6 mx-0 md:mx-4 border-gray-200 dark:border-neutral-700" />
+        <hr className="mt-12 mx-0 md:mx-4 border-gray-200 dark:border-neutral-700" />
       </div>
     </>
   );

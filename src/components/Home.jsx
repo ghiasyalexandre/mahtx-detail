@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="dark:bg-gradient-to-tr bg-white dark:bg-transparent dark:from-white/20 dark:via-transparent flex flex-col justify-center transition-colors duration-500 ease-in-out">
-        <div className="mx-auto max-w-7xl pb-16 pt-12 sm:pt-16 lg:pb-32">
+        <div className="mx-auto max-w-7xl pb-16 pt-12 sm:pt-16">
           <header>
             <div
               className={`text-center mb-12 text-black dark:text-white text-6xl transition-opacity transform duration-1000 ease-in-out  ${
@@ -120,9 +120,9 @@ export default function Home() {
 
         <section
           aria-labelledby="contact"
-          className="bg-white dark:bg-transparent pt-16  lg:pt-24 dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-all duration-500 ease-in-out"
+          className="bg-white dark:bg-transparent pt-4  lg:pt-20 dark:bg-gradient-to-br dark:from-white/20 dark:via-transparent transition-all duration-500 ease-in-out"
         >
-          <div className="container max-w-7xl px-8 py-8  mx-auto xl:shadow-neonDark xl:dark:shadow-neonLight rounded-xl">
+          <div className="container max-w-7xl px-8 lg:px-12 py-8 lg:py-12  mx-auto xl:shadow-neonDark xl:dark:shadow-neonLight rounded-xl">
             <div className=" flex justify-center text-center">
               <div className="col-span-1">
                 <p className="font-medium text-lg text-neutral-500 dark:text-neutral-400 ">
@@ -130,7 +130,7 @@ export default function Home() {
                 </p>
                 <h2
                   id="contact"
-                  className="mt-2 text-3xl font-semibold text-black md:text-4xl dark:text-white"
+                  className="mt-2 md:mt-0 text-3xl font-semibold text-black md:text-4xl dark:text-white"
                 >
                   Contact Us{" "}
                 </h2>
@@ -329,7 +329,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <hr className="my-4 lg:mt-24 mx-4 border-transparent dark:border-neutral-700" />
+          <hr className="mt-4 lg:mt-24 mx-4 border-neutral-300 dark:border-neutral-800" />
         </section>
       </main>
     </>
