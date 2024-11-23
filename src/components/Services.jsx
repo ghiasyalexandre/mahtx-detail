@@ -623,8 +623,8 @@ export default function ServiceSelection() {
         </div>
 
         {/* Summary Section */}
-        <div className="lg:w-1/3 ml-2 m-4 p-4 border rounded-lg shadow-lg shadow-black/20 dark:shadow-white/20 transition-all transform-gpu duration-500 ease-in-out">
-          <h3 className="text-2xl text-center font-semibold lg:mb-3 text-black dark:text-white">
+        <div className="lg:w-1/3 lg:ml-2 m-4 p-4 border rounded-lg shadow-lg shadow-black/20 dark:shadow-white/20 transition-all transform-gpu duration-500 ease-in-out">
+          <h3 className="text-2xl text-center font-semibold mb-3 text-black dark:text-white">
             Summary
           </h3>
           <hr className="mt-0 mb-4 border-neutral-700" />
@@ -667,25 +667,27 @@ export default function ServiceSelection() {
             {!showContactInfo ? (
               <div className="">
                 <div className="flex flex-col ">
-                  <div className="relative">
-                    <MyDatePicker onDateChange={setSelectedDate} />
-                  </div>
                   {!showCategories && !showContactInfo && (
-                    <div className="flex gap-2">
-                      <button
-                        aria-label="Go Back"
-                        onClick={handleOptionView}
-                        className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30 transition-all capitalize ease-in-out  duration-300 transform"
-                      >
-                        Back
-                      </button>
-                      <button
-                        aria-label="Next"
-                        onClick={handleContactView}
-                        className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30  transition-all capitalize ease-in-out  duration-300 transform"
-                      >
-                        Next
-                      </button>
+                    <div className="flex flex-col gap-2">
+                      <div className="relative">
+                        <MyDatePicker onDateChange={setSelectedDate} />
+                      </div>
+                      <div className="flex gap-4">
+                        <button
+                          aria-label="Go Back"
+                          onClick={handleOptionView}
+                          className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30 transition-all capitalize ease-in-out  duration-300 transform"
+                        >
+                          Back
+                        </button>
+                        <button
+                          aria-label="Next"
+                          onClick={handleContactView}
+                          className="dark:bg-white bg-black text-white dark:text-black font-semibold w-full lg:w-1/2 py-3 rounded-md mt-2 tracking-wide shadow-lg dark:hover:shadow-white/30 hover:shadow-black/30  transition-all capitalize ease-in-out  duration-300 transform"
+                        >
+                          Next
+                        </button>
+                      </div>
                     </div>
                   )}
                 </div>

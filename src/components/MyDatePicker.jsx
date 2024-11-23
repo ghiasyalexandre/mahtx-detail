@@ -21,7 +21,7 @@ export default function MyDatePicker({ onDateChange }) {
   return (
     <DatePicker
       granularity="minute"
-      className="group flex flex-col gap-2 w-full xl:w-[320px] mb-2"
+      className="group flex flex-col gap-2 w-full xl:w-[320px]"
       minValue={today(getLocalTimeZone())}
       defaultValue={now(getLocalTimeZone())}
       maxVisibleMonths={6}
