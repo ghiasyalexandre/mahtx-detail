@@ -38,41 +38,24 @@ export default function Home() {
           </header>
           <section
             aria-labelledby="services"
-            className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-4 mx-4"
+            className="grid gap-8 grid-cols-1 md:grid-cols-3 px-4 mx-4"
           >
             <h2 id="services" className="sr-only">
               Services We Offer
             </h2>
             {[
               {
-                title: "Interior Detailing",
-                description:
-                  "Deep cleaning interiors include vacuuming, shampooing, and leather treatment.",
+                title: "Essential Clean",
+                description: "Interior + Exterior wash clean & clear.",
               },
               {
-                title: "Exterior Detailing",
+                title: "Showroom Polish",
                 description:
-                  "Hand wash, clay bar treatment, polish, and wax to protect your car's finish.",
+                  "All essentials plus PA paint correction + Ceramic.",
               },
               {
-                title: "Ceramic Coating",
-                description:
-                  "Get long-lasting protection for your vehicle's paint with our advanced ceramic coating.",
-              },
-              {
-                title: "Paint Correction",
-                description:
-                  "Remove scratches and swirls to bring back the shine of your car's paintwork.",
-              },
-              {
-                title: "Engine Detailing",
-                description:
-                  "Keep your engine bay clean and free of dust, oil, and grime to maintain efficiency.",
-              },
-              {
-                title: "Aircraft Detailing",
-                description:
-                  "Complete interior and exterior dry detailing to give your plane a clean takeoff.",
+                title: "Aircraft/Speciality",
+                description: "For planes, exotics, or rare vehicles.",
               },
             ].map((service, index) => (
               <article
@@ -81,7 +64,7 @@ export default function Home() {
                 className="hover:scale-105 transition-transform ease-in-out duration-500 "
               >
                 <div
-                  className={`bg-gradient-to-tr via-70% from-black via-black to-transparent dark:from-white dark:via-white dark:to-black dark:bg-white rounded-lg shadow-xl dark:shadow-xl shadow-black/60 dark:shadow-white/20 p-6 flex flex-col justify-between transition-all  transform duration-1000 ease-in-out ${
+                  className={`bg-gradient-to-tr text-center md:text-left min-h-48 via-70% from-black via-black to-transparent dark:from-white dark:via-white dark:to-black dark:bg-white rounded-lg shadow-xl dark:shadow-xl shadow-black/60 dark:shadow-white/20 p-6 flex flex-col justify-between transition-all  transform duration-1000 ease-in-out ${
                     fadeIn
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-96"
@@ -105,7 +88,7 @@ export default function Home() {
                         aria-label={`Learn more about our ${service.title}`}
                         className="text-black hover:text-white hover:shadow-md hover:shadow-white/50 dark:hover:shadow-black/50 hover:scale-105 bg-white dark:bg-black hover:bg-black dark:text-white border border-white px-4 py-2 rounded-md dark:hover:bg-white dark:hover:text-black dark:hover:border-black transition-all duration-300 ease-in-out"
                       >
-                        Learn More
+                        Book Now
                       </button>
                     </Link>
                   </div>
