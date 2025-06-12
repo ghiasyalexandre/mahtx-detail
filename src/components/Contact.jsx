@@ -7,6 +7,17 @@ export default function Contact() {
 
   useEffect(() => {
     setFadeIn(true); // Trigger fade-in effect after mounting
+    emailjs.init({
+      publicKey: "wZaUpLZvQucbZMd3J",
+      blockHeadless: true,
+
+      limitRate: {
+        // Set the limit rate for the application
+        id: "app",
+        // Allow 1 request per 60s
+        throttle: 5000,
+      },
+    });
   }, []);
 
   const [formData, setFormData] = useState({
@@ -26,15 +37,11 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Use your EmailJS credentials here
-
     emailjs
       .send(
-        "service_ijk20o2", // Replace with your service ID
-        "template_tk0916c", // Replace with your template ID
-        formData,
-        "mahtx" // Replace with your user ID
+        "service_7hogr9p", // Replace with your service ID
+        "template_dh43i98", // Replace with your template ID
+        formData
       )
       .then(
         (response) => {

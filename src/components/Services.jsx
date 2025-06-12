@@ -194,10 +194,18 @@ export default function ServiceSelection() {
 
   useEffect(() => {
     setFadeInTitle(true); // Trigger fade-in effect after mounting
-  }, []);
-
-  useEffect(() => {
     setFadeIn(true); // Trigger fade-in effect after mounting
+    emailjs.init({
+      publicKey: "wZaUpLZvQucbZMd3J",
+      blockHeadless: true,
+
+      limitRate: {
+        // Set the limit rate for the application
+        id: "app",
+        // Allow 1 request per 60s
+        throttle: 5000,
+      },
+    });
   }, []);
 
   const handleCategoryView = (category) => {
@@ -234,18 +242,6 @@ export default function ServiceSelection() {
     }, 500); // Adjust this delay to control the timing between the two sections
   };
 
-  emailjs.init({
-    publicKey: "YtIz5jNwYDKHKJtxy",
-    blockHeadless: true,
-
-    limitRate: {
-      // Set the limit rate for the application
-      id: "app",
-      // Allow 1 request per 60s
-      throttle: 5000,
-    },
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -253,10 +249,9 @@ export default function ServiceSelection() {
 
     emailjs
       .send(
-        "service_ijk20o2", // Replace with your service ID
-        "template_abewy5p", // Replace with your template ID
+        "service_7hogr9p", // Replace with your service ID
+        "template_lrslt2d", // Replace with your template ID
         formData
-        // "maht" // Replace with your user ID
       )
       .then(
         (response) => {
