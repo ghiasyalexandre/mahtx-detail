@@ -213,7 +213,7 @@ export default function Home() {
 
             <hr className="mt-2 mb-4 border-transparent dark:border-neutral-700" />
 
-            <div className="grid grid-cols-1 gap-y-12 mt-10 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-y-12 mt-10 lg:grid-cols-3 text-center lg:text-left">
               <div className="grid gap-6 grid-cols-1 xs:grid-cols-3 lg:grid-cols-1 xs:justify-items-center lg:justify-items-start">
                 <div className=" min-w-36">
                   <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
@@ -247,7 +247,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className=" min-w-36">
+                <div className=" min-w-36 text-center lg:text-left">
                   <span className="inline-block p-3 text-black dark:text-white rounded-full bg-black/20 dark:bg-neutral-700/50 shadow-md shadow-black/30 dark:shadow-white/20">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -279,6 +279,10 @@ export default function Home() {
                   <p className="mt-2 text-sm lg:text-base text-gray-500 dark:text-gray-400 ">
                     Based out of Florida.
                   </p>
+                  <p className="mt-2 text-sm lg:text-base text-black dark:text-white">
+                    Port St. Lucie, FL
+                  </p>
+                  <p className="">&</p>
                   <p className="mt-2 text-sm lg:text-base text-black dark:text-white">
                     West Palm Beach, FL
                   </p>

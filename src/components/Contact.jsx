@@ -75,7 +75,7 @@ export default function Contact() {
               <hr className="lg:mb-2 mt-4 lg:mt-6 lg:mr-24 2xl:mr-48 border-neutral-300 dark:border-neutral-700" />
 
               <div className="mt-6 space-y-4 sm:space-y-0 lg:space-y-8 block md:mt-8 sm:flex sm:justify-between lg:block text-xl">
-                <p className="flex items-center -mx-2 -ml-1">
+                <div className="flex items-center -mx-2 -ml-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6 lg:w-8 lg:h-8 mx-1 sm:mr-1 lg:mr-2 text-black dark:text-white"
@@ -100,10 +100,15 @@ export default function Contact() {
                     />
                   </svg>
 
-                  <span className="mx-1 lg:pt-1 text-gray-700 truncate lg:w-72 dark:text-gray-400 text-sm md:text-base lg:text-xl">
-                    West Palm Beach, FL
-                  </span>
-                </p>
+                  <div className="flex flex-col">
+                    <span className="mx-1 lg:pt-1 text-gray-700 truncate lg:w-72 dark:text-gray-400 text-sm md:text-base lg:text-xl">
+                      Port St. Lucie, FL &
+                    </span>
+                    <span className="mx-1 lg:pt-1 text-gray-700 truncate lg:w-72 dark:text-gray-400 text-sm md:text-base lg:text-xl">
+                      West Palm Beach, FL
+                    </span>
+                  </div>
+                </div>
 
                 <p className="flex items-center -mx-2">
                   <svg
