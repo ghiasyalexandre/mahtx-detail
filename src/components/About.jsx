@@ -157,54 +157,63 @@ export default function About() {
         </div>
         <hr className="mt-12 mx-0 md:mx-4 border-gray-200 dark:border-neutral-700" />
         {/* Trusted Brands */}
-        <div className=" mx-auto my-12">
+        <div className=" mx-auto py-12">
           <div className="flex flex-col justify-center align-middle mb-8 text-center">
             <h1 className="font-semibold text-black dark:text-white">
               Brands We Trust
             </h1>
             <p className=" text-neutral-700 dark:text-neutral-300">
-              Ensures quality to keep your vehicle pristine.
+              Ensures quality to keep your vehicle pristine
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5 mx-4 md:mx-0">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 mx-4 md:mx-0">
+            <div className="flex items-center justify-center col-span-1">
+              <img
+                draggable={false}
+                className=" max-h-32 hover:scale-105 transition-all duration-300 ease-in-out"
+                src="aero.avif"
+              />
+            </div>
+
+            <div className="flex items-center justify-center col-span-1">
+              <img
+                draggable={false}
+                className=" max-h-32 dark:invert  hover:scale-105 transition-all duration-300 ease-in-out"
+                src="gyeon.png"
+              />
+            </div>
+
             <div className="flex items-center justify-center col-span-1">
               <img
                 draggable={false}
                 alt="Matthew spraying a car"
-                className="max-h-32 hover:scale-105 transition-all duration-300 ease-in-out"
-                src="https://www.hydrosilex.com/cdn/shop/files/hydrosilex_logo_2020_white_200x.png?v=1613736867"
+                className="max-h-32 dark:invert hover:scale-105 transition-all duration-300 ease-in-out"
+                src="diamond.png"
               />
             </div>
 
             <div className="flex items-center justify-center col-span-1">
               <img
                 draggable={false}
-                className=" max-h-32 dark:invert hover:scale-105 transition-all duration-300 ease-in-out"
-                src="https://fineshine.ee/wp-content/uploads/2024/06/carpro-colour-logo.png"
+                className=" max-h-32 invert dark:invert-0 hover:scale-105 transition-all duration-300 ease-in-out"
+                src="kcx.avif"
               />
             </div>
 
             <div className="flex items-center justify-center col-span-1">
               <img
                 draggable={false}
-                className=" max-h-32 dark:invert hover:scale-105 transition-all duration-300 ease-in-out"
-                src="https://fineshine.ee/wp-content/uploads/2024/08/Angelwax_logo-copy.png"
+                alt="Matthew spraying a car"
+                className="max-h-32  hover:scale-105 transition-all duration-300 ease-in-out"
+                src="opticoat.avif"
               />
             </div>
 
             <div className="flex items-center justify-center col-span-1">
               <img
                 draggable={false}
-                className=" max-h-32 dark:invert hover:scale-105 transition-all duration-300 ease-in-out"
-                src="https://fineshine.ee/wp-content/uploads/2024/06/autofinesse-logo.png"
-              />
-            </div>
-
-            <div className="flex items-center justify-center col-span-1">
-              <img
-                draggable={false}
-                className="  max-h-32 dark:invert hover:scale-105 transition-all duration-300 ease-in-out"
-                src="https://fineshine.ee/wp-content/uploads/2024/08/logo_t-puhtax.png"
+                className="  max-h-32 hover:scale-105 transition-all duration-300 ease-in-out"
+                src="3d.avif"
               />
             </div>
           </div>
